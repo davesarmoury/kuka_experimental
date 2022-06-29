@@ -3,13 +3,15 @@
 
   <xacro:macro name="kuka_kr10r1100sixx" params="prefix">
     <xacro:include filename="$(find kuka_resources)/urdf/common_materials.xacro"/>
+    <xacro:include filename="$(find kuka_kr10_support)/urdf/kr10r1100sixx_macro.xacro" />
+
     <link name="${prefix}base_link">
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
           <mesh filename="package://kuka_kr10_support/meshes/kr10r1100sixx/visual/base_link.stl" />
         </geometry>
-        <xacro:material_kuka_black />
+        <material name="zed2i_mat"/>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -24,7 +26,7 @@
         <geometry>
           <mesh filename="package://kuka_kr10_support/meshes/kr10r1100sixx/visual/link_1.stl" />
         </geometry>
-        <xacro:material_kuka_orange />
+        <xacro:material_kuka_ral_pure_white />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -39,7 +41,7 @@
         <geometry>
           <mesh filename="package://kuka_kr10_support/meshes/kr10r1100sixx/visual/link_2.stl"/>
         </geometry>
-        <xacro:material_kuka_orange />
+        <xacro:material_kuka_ral_pure_white />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -54,7 +56,7 @@
         <geometry>
           <mesh filename="package://kuka_kr10_support/meshes/kr10r1100sixx/visual/link_3.stl" />
         </geometry>
-        <xacro:material_kuka_orange />
+        <xacro:material_kuka_ral_pure_white />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -69,7 +71,7 @@
         <geometry>
           <mesh filename="package://kuka_kr10_support/meshes/kr10r1100sixx/visual/link_4.stl" />
         </geometry>
-        <xacro:material_kuka_orange />
+        <xacro:material_kuka_ral_pure_white />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -84,7 +86,7 @@
         <geometry>
           <mesh filename="package://kuka_kr10_support/meshes/kr10r1100sixx/visual/link_5.stl" />
         </geometry>
-        <xacro:material_kuka_orange />
+        <xacro:material_kuka_ral_pure_white />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
